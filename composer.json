@@ -1,0 +1,18 @@
+{
+  "name": "devgeniem/dustpress-component-boilerplate",
+  "type": "wordpress-plugin",
+  "description": "Cache populator",
+  "authors": [
+    {
+        "name": "Geniem Guy",
+        "email": "geniem.guy@geniem.com",
+        "homepage": "http://geniem.fi/",
+        "role": "Developer"
+    }
+  ],
+  "keywords": [
+    "wordpress", "cache"
+  ],
+  "license": "GPL-3.0",
+  "minimum-stability": "dev"
+}

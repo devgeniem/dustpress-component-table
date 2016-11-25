@@ -1,4 +1,0 @@
-<div class="gmaps-wrap">
-    <div class="overlay" onClick="style.pointerEvents='none'"></div>
-    <div class="dustpress-component-gmaps" data-counter="{counter}" style="height: 500px; width: 100%;"></div>
-</div>

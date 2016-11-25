@@ -1,0 +1,10 @@
+{! 
+
+	# ACF FIELDS
+
+	field_slug = text content (type)
+
+!}
+
+<div class="dpc-boilerplate">
+</div>
