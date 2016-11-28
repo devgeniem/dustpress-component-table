@@ -1,21 +1,27 @@
 {
-  "name": "devgeniem/dustpress-component-boilerplate",
-  "type": "wordpress-plugin",
-  "description": "Cache populator",
-  "authors": [
-    {
-        "name": "Geniem Guy",
-        "email": "geniem.guy@geniem.com",
-        "homepage": "http://geniem.fi/",
-        "role": "Developer"
+    "name": "devgeniem/dustpress-component-boilerplate",
+    "type": "wordpress-plugin",
+    "description": "Cache populator",
+    "authors": [
+        {
+            "name": "Timi-Artturi Mäkelä",
+            "email": "timi.makela@geniem.com",
+            "homepage": "http://geniem.fi/",
+            "role": "Developer"
+        }
+    ],
+    "keywords": [
+        "wordpress", "cache"
+    ],
+    "license": "GPL-3.0",
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "ssh://git@github.com/devgeniem/dustpress-components.git"
+        }
+    ],
+    "require": {
+        "devgeniem/dustpress-components": "*"
     }
-  ],
-  "keywords": [
-    "wordpress", "cache"
-  ],
-  "license": "GPL-3.0",
-  "minimum-stability": "dev",
-  "require": {
-    "devgeniem/dustpress-components": "*"
-  }
 }
