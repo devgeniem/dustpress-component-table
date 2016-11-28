@@ -11,7 +11,7 @@ Or add it into your composer.json
 ```
 {
 	"require": {
-		"devgeniem/dustpress": "*"
+		"devgeniem/dustpress-component-boilerplate": "*"
 	}
 }
 ```
@@ -22,6 +22,8 @@ Or add it into your composer.json
 description: describe plugin main functionalities
 
 # Usage
+- activate component plugin
+- component should be now ready to use
 
-component name: 
-
+# Overriding component dust templates
+Create same name dust template in project folder

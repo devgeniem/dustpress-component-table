@@ -19,7 +19,7 @@ namespace DustPress\Components;
 		 * Varialbes
 		 * label = Name of the component shows in admin side
 		 * name  = ACF field slug
-		 * key   = 
+		 * key   = add component name
 		 */
 		var $label 	= 'Name of the component';
 		var $name 	= 'component_name';
@@ -33,7 +33,7 @@ namespace DustPress\Components;
 		/**
 		 * acf field component data
 		 * @param  [type] $data
-		 * @return [type]       [description]
+		 * @return [type] [description]
 		 * 
 		 * !remember to describe acf field names!
 		 * $data['field_slug'] = description
@@ -67,11 +67,11 @@ namespace DustPress\Components;
 		public function fields() {
 			return array (
 
-				'key' => $this->key,
-				'name' => $this->name,
-				'label' => $this->label,
-				'display' => 'block',
-				'sub_fields' => array (
+				'key' 			=> $this->key,
+				'name' 			=> $this->name,
+				'label' 		=> $this->label,
+				'display' 		=> 'block',
+				'sub_fields' 	=> array (
 					/* 
 					* sub_fields = acf php export 'fields' array
 					* Here you can add your exported acf fields
