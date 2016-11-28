@@ -14,14 +14,5 @@
         "wordpress", "cache"
     ],
     "license": "GPL-3.0",
-    "minimum-stability": "dev",
-    "repositories": [
-        {
-            "type": "git",
-            "url": "ssh://git@github.com/devgeniem/dustpress-components.git"
-        }
-    ],
-    "require": {
-        "devgeniem/dustpress-components": "*"
-    }
+    "minimum-stability": "dev"
 }
