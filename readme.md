@@ -31,24 +31,24 @@ description: describe plugin main functionalities
 ├── assets/
 │   ├── scripts/
 │   │   ├── main.js
-│   │   ├── plugin.js
-│   ├── styles/
-│   │   ├── main.scss
-│   │   ├── _defaults.scss
-│   │   ├── _colors.scss
-│   │   ├── _utils.scss
-│   │   ├── _gc-component-name
+│   │   └── plugin.js
+│   └── styles/
+│       ├── main.scss
+│       ├── _defaults.scss
+│       ├── _colors.scss
+│       ├── _utils.scss
+│       └── _gc-component-name
 ├── dist/
 │   ├── plugin.js
-│   ├── plugin.css
+│   └── plugin.css
 ├── node_modules/
-│   ├── ...
+│   └── ...
 ├── component-componentname.dust
 ├── composer.json
 ├── package.json
 ├── plugin.php
 ├── readme.md
-├── webpack.config.js
+└── webpack.config.js
 ```
 
 ## Overriding component dust templates
