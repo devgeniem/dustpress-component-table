@@ -18,14 +18,45 @@ Or add it into your composer.json
 
 
 # Component details
-
 description: describe plugin main functionalities
 
 # Usage
 - activate parent plugin devgeniem/dustpress-components plugin
 - create advanced custom fields clone field
--- clone field "dpc_flexible_field"
+  -- clone field "dpc_flexible_field"
 - add your own component plugin
 
-# Overriding component dust templates
+## File structure
+```
+├── assets/
+│   ├── scripts/
+│   │   ├── main.js
+│   │   ├── plugin.js
+│   ├── styles/
+│   │   ├── main.scss
+│   │   ├── _defaults.scss
+│   │   ├── _colors.scss
+│   │   ├── _utils.scss
+│   │   ├── _gc-component-name
+├── dist/
+│   ├── plugin.js
+│   ├── plugin.css
+├── node_modules/
+│   ├── ...
+├── component-componentname.dust
+├── composer.json
+├── package.json
+├── plugin.php
+├── readme.md
+├── webpack.config.js
+```
+
+## Overriding component dust templates
 Create same name dust template in project folder
+
+## Assets
+run npm
+`npm install`
+run webpack to compile assets
+`webpack`
+Develope component specific sass files

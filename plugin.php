@@ -1,10 +1,10 @@
 <?php
 /**
  * Plugin Name: DustPress Component: Component Name
- * Plugin URI: https://github.com/devgeniem/dustpress-components-google-maps
- * Description: Google Maps component for DustPress Components
- * Version: 0.0.1
- * Author: Geniem Oy / Miika Arponen
+ * Plugin URI: https://github.com/devgeniem/dustpress-components-boilerplate
+ * Description: DustPress component boilerplate
+ * Version: 0.0.2
+ * Author: Geniem Oy / Timi-Artturi Mäkelä
  * Author URI: http://www.geniem.com
  */
 
