@@ -41,6 +41,10 @@ description: describe plugin main functionalities
 ├── dist/
 │   ├── plugin.js
 │   └── plugin.css
+├── languages/
+│   ├── component-textdomain.pot
+│   └── fi.pot
+│   └── fi.mo
 ├── node_modules/
 │   └── ...
 ├── component-componentname.dust
@@ -60,3 +64,12 @@ run npm
 run webpack to compile assets
 `webpack`
 Develope component specific sass files
+
+
+## Translations
+1. translate component labels
+2. Scan component for translatable strings
+3. Name files likewise
+`pot-file: component-textdomain.pot`
+`po-file: fi.po`
+`mo-file: fi.mo`

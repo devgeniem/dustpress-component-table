@@ -6,6 +6,8 @@
  * Version: 0.0.2
  * Author: Geniem Oy / Timi-Artturi Mäkelä
  * Author URI: http://www.geniem.com
+ * Text Domain: dpc-component-name
+ * Domain Path: /languages
  */
 
 namespace DustPress\Components;
@@ -18,12 +20,16 @@ namespace DustPress\Components;
 		/**
 		 * Varialbes
 		 * label = Name of the component shows in admin side
-		 * name  = ACF field slug
-		 * key   = add component name
+		 * name  = Add component name
+		 * key   = ACF field key
 		 */
-		var $label 	= 'Name of the component';
-		var $name 	= 'component_name';
-		var $key 	= 'dpc_component_name';
+		public function __construct() {
+			$this->label    = __( 'DustPress Boilerplate', 'dpc-component-name' );
+			$this->name 	= 'component_name';
+			$this->key 		= 'dpc_component_name';
+
+			parent::__construct();
+		}
 
 		public function init() {
 			// Example
@@ -89,6 +95,9 @@ namespace DustPress\Components;
 
 		}
 	}
-	
-	Components::add( new ComponentName() );
+
+	if ( is_plugin_active( 'dustpress-components/plugin.php' ) ) {
+		Components::add( new ComponentName() );
+	}
+
 }, 2, 1 );
