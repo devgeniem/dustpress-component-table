@@ -37,7 +37,7 @@ description: describe plugin main functionalities
 │       ├── _defaults.scss
 │       ├── _colors.scss
 │       ├── _utils.scss
-│       └── _gc-component-name
+│       └── _gc-component-name.scss
 ├── dist/
 │   ├── plugin.js
 │   └── plugin.css
