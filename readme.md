@@ -43,7 +43,7 @@ description: describe plugin main functionalities
 │   └── plugin.css
 ├── languages/
 │   ├── component-textdomain.pot
-│   └── fi.po
+│   ├── fi.po
 │   └── fi.mo
 ├── node_modules/
 │   └── ...
