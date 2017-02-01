@@ -67,9 +67,10 @@ Develope component specific sass files
 
 
 ## Translations
-1. translate component labels
-2. Scan component for translatable strings
-3. Name files likewise
+1. set component text domain in plugin header `Text Domain: dpc-component-name`
+2. translate component labels
+3. Scan component for translatable strings
+4. Name files likewise
 ```
 pot-file: component-textdomain.pot
 po-file: fi.po
