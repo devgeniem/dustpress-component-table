@@ -18,7 +18,7 @@ namespace DustPress\Components;
 	class ComponentName extends Component {
 
 		/**
-		 * Varialbes
+		 * Variables
 		 * label = Name of the component shows in admin side
 		 * name  = Add component name
 		 * key   = ACF field key
