@@ -25,7 +25,7 @@ namespace DustPress\Components;
 		 */
 		public function __construct() {
 			$this->label    = __( 'DustPress Boilerplate', 'dpc-component-name' );
-			$this->name 	= 'component_name';
+			$this->name 	= 'component-name';
 			$this->key 		= 'dpc_component_name';
 
 			parent::__construct();
