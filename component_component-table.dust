@@ -1,0 +1,35 @@
+{! 
+
+    # ACF FIELDS
+
+    table_field = acf table field
+
+!}
+
+<div class="gc-table">
+    <div class="row">
+        <div class="small-12 columns">
+            <table>
+                {! HEAD !}
+                <thead>
+                    {#table_field.header}
+                        <th width="200">{.c}</th>
+                    {/table_field.header}
+                </thead>
+
+                {! BODY !}
+                <tbody>
+                    {#table_field.body}
+                        <tr>
+                            {#.}
+                                {#.}
+                                    <td>{c}</td>
+                                {/.}
+                            {/.}
+                        </tr>
+                    {/table_field.body}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

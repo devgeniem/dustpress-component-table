@@ -1,12 +1,12 @@
 <?php
 /**
- * Plugin Name: DustPress Component: Component Name
- * Plugin URI: https://github.com/devgeniem/dustpress-components-boilerplate
+ * Plugin Name: DustPress Component Table
+ * Plugin URI: https://github.com/devgeniem/dustpress-components-table
  * Description: DustPress component boilerplate
- * Version: 0.1.4
+ * Version: 0.0.1
  * Author: Geniem Oy / Timi-Artturi Mäkelä
  * Author URI: http://www.geniem.com
- * Text Domain: dpc-component-name
+ * Text Domain: dpc-component-table
  * Domain Path: /languages
  */
 
@@ -15,7 +15,7 @@ namespace DustPress\Components;
 \add_action( 'plugins_loaded', function() {
 
 
-	class ComponentName extends Component {
+	class ComponentTable extends Component {
 
 		/**
 		 * Variables
@@ -24,9 +24,9 @@ namespace DustPress\Components;
 		 * key   = ACF field key
 		 */
 		public function __construct() {
-			$this->label    = __( 'DustPress Boilerplate', 'dpc-component-name' );
-			$this->name 	= 'component-name';
-			$this->key 		= 'dpc_component_name';
+			$this->label    = __( 'Table', 'dpc-component-table' );
+			$this->name 	= 'component-table';
+			$this->key 		= 'dpc_component_table';
 
 			parent::__construct();
 		}
@@ -55,7 +55,7 @@ namespace DustPress\Components;
 		 */
 		public function before() {
 			// place to enqueue resources
-			wp_register_script( 'dustpress-components-component-name', plugins_url( 'dist/plugin.js',__FILE__ ), null, null, true );
+			wp_register_script( 'dustpress-components-component-table', plugins_url( 'dist/plugin.js',__FILE__ ), null, null, true );
 		}
 
 		/**
@@ -63,7 +63,7 @@ namespace DustPress\Components;
 		 * @return [type] [description]
 		 */
 		public function after() {
-			wp_enqueue_script( 'dustpress-components-component-name' );
+			wp_enqueue_script( 'dustpress-components-component-table' );
 		}
 
 		/**
@@ -78,11 +78,21 @@ namespace DustPress\Components;
 				'label' 		=> $this->label,
 				'display' 		=> 'block',
 				'sub_fields' 	=> array (
-					/* 
-					* sub_fields = acf php export 'fields' array
-					* Here you can add your exported acf fields
-					* Add arrays of the fields array see the documentation for the details http://todooo.com
-					*/
+					array (
+						'key' => 'dpc_table_field',
+						'label' => 'Taulukkokenttä',
+						'name' => 'table_field',
+						'type' => 'table',
+						'instructions' => '',
+						'required' => 0,
+						'conditional_logic' => 0,
+						'wrapper' => array (
+							'width' => '',
+							'class' => '',
+							'id' => '',
+						),
+						'use_header' => 0,
+					)
 				)
 			);
 		}
@@ -97,7 +107,19 @@ namespace DustPress\Components;
 	}
 
 	if ( is_plugin_active( 'dustpress-components/plugin.php' ) ) {
-		Components::add( new ComponentName() );
+		Components::add( new ComponentTable() );
+
+		$table_field_plugin_file_path 		= 'advanced-custom-fields-table-field/acf-table.php';
+		$table_field_plugin_file_full_path 	= WP_PLUGIN_DIR . '/advanced-custom-fields-table-field/acf-table.php';
+
+		// if acf-table-field plugin exists and plugin is not activate activate acf-table-field
+		if ( file_exists( $table_field_plugin_file_full_path ) && !is_plugin_active( $table_field_plugin_file_path )  ) {
+			activate_plugin( $table_field_plugin_file_path );
+		}
+		else if ( !file_exists( $table_field_plugin_file_full_path ) ) {
+			error_log( "dustpress-component-table: wp-plugin 'advanced-custom-fields-table-field' doesn't exists" );
+		}
+
 	}
 
 }, 2, 1 );

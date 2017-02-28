@@ -1,3 +1,5 @@
+# DustPress component table
+
 # Installation
 
 We recommend that you install DustPress component with Composer, but it is also possible to do it manually.

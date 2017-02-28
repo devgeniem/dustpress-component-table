@@ -1,7 +1,7 @@
 {
-    "name": "devgeniem/dustpress-component-boilerplate",
+    "name": "devgeniem/dustpress-component-table",
     "type": "wordpress-plugin",
-    "description": "Cache populator",
+    "description": "DustPress Component for tables uses wp plugin advanced-custom-fields-table-field on admin side. Activates automatically dependency plugin when activated.",
     "authors": [
         {
             "name": "Timi-Artturi Mäkelä",
@@ -17,11 +17,16 @@
     "minimum-stability": "dev",
     "repositories": [
         {
+          "type": "composer",
+          "url": "https://wpackagist.org"
+        },
+        {
             "type": "git",
             "url": "ssh://git@github.com/devgeniem/dustpress-components.git"
         }
     ],
     "require": {
-        "devgeniem/dustpress-components": "*"
+        "devgeniem/dustpress-components": "*",
+        "wpackagist-plugin/advanced-custom-fields-table-field": ">=1.1.13"
     }
 }
