@@ -3,7 +3,7 @@
  * Plugin Name: DustPress Component Table
  * Plugin URI: https://github.com/devgeniem/dustpress-components-table
  * Description: DustPress component boilerplate
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Geniem Oy / Timi-Artturi Mäkelä
  * Author URI: http://www.geniem.com
  * Text Domain: dpc-component-table
