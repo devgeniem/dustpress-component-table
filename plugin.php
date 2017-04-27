@@ -3,7 +3,7 @@
  * Plugin Name: DustPress Component Table
  * Plugin URI: https://github.com/devgeniem/dustpress-components-table
  * Description: DustPress component boilerplate
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: Geniem Oy / Timi-Artturi Mäkelä
  * Author URI: http://www.geniem.com
  * Text Domain: dpc-component-table
@@ -55,7 +55,7 @@ namespace DustPress\Components;
 		 */
 		public function before() {
 			// place to enqueue resources
-			wp_register_script( 'dustpress-components-component-table', plugins_url( 'dist/plugin.js',__FILE__ ), null, null, true );
+			/*wp_register_script( 'dustpress-components-component-table', plugins_url( 'dist/plugin.js',__FILE__ ), null, null, true );*/
 		}
 
 		/**
@@ -63,7 +63,7 @@ namespace DustPress\Components;
 		 * @return [type] [description]
 		 */
 		public function after() {
-			wp_enqueue_script( 'dustpress-components-component-table' );
+			/*wp_enqueue_script( 'dustpress-components-component-table' );*/
 		}
 
 		/**
