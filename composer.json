@@ -23,14 +23,9 @@
         {
             "type": "git",
             "url": "ssh://git@github.com/devgeniem/dustpress-components.git"
-        },
-        {
-            "type": "git",
-            "url": "git://git@github.com/devgeniem/advanced-custom-fields-table-field.git"
-        }        
+        }
     ],
     "require": {
-        "devgeniem/dustpress-components": "*",
-        "wpackagist-plugin/advanced-custom-fields-table-field": "dev-master"
+        "devgeniem/dustpress-components": "*"
     }
 }
