@@ -26,7 +26,6 @@
         }
     ],
     "require": {
-        "devgeniem/dustpress-components": "*",
-        "wpackagist-plugin/advanced-custom-fields-table-field": ">=1.1.13"
+        "devgeniem/dustpress-components": "*"
     }
 }
